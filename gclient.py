@@ -1363,7 +1363,7 @@ class Dependency(gclient_utils.WorkItem, DependencySettings):
         'checkout_ppc': 'ppc' in self.target_cpu,
         'checkout_s390': 's390' in self.target_cpu,
         'checkout_x64': 'x64' in self.target_cpu,
-        'host_cpu': detect_host_arch.HostArch(),
+        'host_cpu': 'x64',
     }
 
   def get_vars(self):

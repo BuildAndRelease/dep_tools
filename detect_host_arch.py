@@ -46,7 +46,7 @@ def HostArch():
   if host_arch == 'arm64' and platform.architecture()[0] == '32bit':
     host_arch = 'arm'
 
-  return host_arch
+  return 'x64'
 
 def DoMain(_):
   """Hook to be called from gyp without starting a separate python
